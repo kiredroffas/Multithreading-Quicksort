@@ -7,5 +7,8 @@
 * The threads are created and used through using pthread_create() and pthread_join().
 * I have built a test bed around the sort program, to test that the code sorts correctly and to time it.
 * Additionally I have coded up the library's qsort() implementation as a benchmark for comparison.
+* Since the overhead of creating a thread is significant, the multithreaded quicksort only performs better for a certain number of added threads, with it progressivly losing efficiency when a larger then optimal amount of threads are used.
 * A define DEBUG flag is included in sort.c to see extra thread creation/joining information, 0 = off, 1 = on.
 * Commented out sections in the main will show the total number of words being sorted from poem.txt, and well as the word structures before and after the threaded quicksort and implemented qsort.
+## Screenshot
+![Alt text](/screenshot/sc1.png?raw=true "sc1")
