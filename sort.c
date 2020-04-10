@@ -163,7 +163,7 @@ void sortThreaded(char** array, unsigned int count) {
 
 
 
-//---------------------------------------QSORT IMPLEMENTATION-----------------------------------------
+//-----------------------------------COMPARISON QSORT IMPLEMENTATION-----------------------------
 
 int compare (const void *a, const void *b ) {
     const char *pa = *(const char**)a;
